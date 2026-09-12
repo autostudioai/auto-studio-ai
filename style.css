@@ -1,0 +1,20 @@
+
+:root{
+  --bg:#070b16; --panel:#0d1425; --panel2:#111a30; --text:#f5f7ff;
+  --muted:#aab4cc; --gold:#d7b35a; --blue:#48a8ff; --line:#26324b;
+}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#060914,#0a1020);color:var(--text);line-height:1.7}
+a{color:#8fc8ff;text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:auto;padding:0 22px}
+header{border-bottom:1px solid var(--line);background:rgba(7,11,22,.92);position:sticky;top:0;backdrop-filter:blur(12px);z-index:10}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:19px}
+.brand img{width:44px;height:44px;border-radius:10px}.navlinks{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}
+.hero{padding:90px 0 70px;text-align:center}.badge{display:inline-block;border:1px solid #3a4968;background:#0c1528;padding:6px 12px;border-radius:999px;color:#bcd2f3;font-size:13px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.05;margin:22px 0 18px}.gradient{background:linear-gradient(90deg,#fff,#d7b35a,#48a8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:760px;margin:auto;color:var(--muted);font-size:18px}
+.btns{margin-top:28px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{padding:12px 20px;border-radius:10px;border:1px solid var(--line);background:#121c31;color:#fff;font-weight:700}.btn.primary{background:linear-gradient(90deg,#b8923f,#e0c16e);color:#08101e;border:0}
+.section{padding:65px 0}.section h2{font-size:32px;margin:0 0 12px}.section-intro{color:var(--muted);max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:24px}.icon{font-size:26px}.card h3{margin:10px 0 5px}.card p{margin:0;color:var(--muted)}
+.notice{border:1px solid #3b4965;background:#0b1324;border-radius:14px;padding:18px 20px;margin-top:24px;color:#c5cee0}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}.legal{max-width:850px;padding:70px 22px}.legal h1{font-size:44px}.legal h2{font-size:25px;margin-top:34px}.legal li{margin:8px 0}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.nav{height:auto;padding:14px 0;align-items:flex-start}.navlinks{gap:10px}.hero{padding-top:60px}}
